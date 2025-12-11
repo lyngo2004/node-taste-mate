@@ -1,0 +1,95 @@
+[
+  {
+    "id": "q1",
+    "question": "Which regional cuisine do you prefer?",
+    "attributeType": "taste_tag",
+    "type": "multi",
+    "options": [
+      "North American",
+      "American",
+      "Asian",
+      "Mexican",
+      "Italian",
+      "French",
+      "Korean",
+      "Japanese",
+      "Vietnamese",
+      "Thai",
+      "Indian",
+      "Chinese",
+      "Spanish",
+      "English",
+      "European"
+    ]
+  },
+
+  {
+    "id": "q2",
+    "question": "What kind of flavors do you prefer?",
+    "attributeType": "taste_tag",
+    "type": "multi",
+    "options": [
+      "savory",
+      "spicy",
+      "sweet",
+      "grilling/barbecue",
+      "comfort-food",
+      "cajun",
+      "creole",
+      "curries",
+      "stir-fry",
+      "sauces",
+      "tex-mex"
+    ]
+  },
+
+  {
+    "id": "q3",
+    "question": "How health-conscious are your food choices?",
+    "attributeType": "health_tag",
+    "type": "multi",
+    "options": [
+      "dairy-free",
+      "diabetic",
+      "egg-free",
+      "gluten-free",
+      "healthy",
+      "high-fiber",
+      "high-protein",
+      "low-calorie",
+      "low-carb",
+      "low-cholesterol",
+      "low-fat",
+      "low-saturated-fat",
+      "low-sodium",
+      "vegan",
+      "vegetarian"
+    ]
+  },
+
+  {
+    "id": "q4",
+    "question": "Do you have any ingredient allergies?",
+    "attributeType": "allergies",
+    "type": "multi",
+    "options": [
+      "wheat",
+      "gluten",
+      "nuts",
+      "shellfish",
+      "fish",
+      "dairy"
+    ],
+    "allowCustomInput": true,
+    "customInputPlaceholder": "Enter an ingredient you're allergic to"
+  },
+
+  {
+    "id": "q5",
+    "question": "Give me 5 dishes that suit you best.",
+    "attributeType": "top_dishes",
+    "type": "multi-text",
+    "maxItems": 5,
+    "inputPlaceholder": "Enter a dish you like"
+  }
+]
