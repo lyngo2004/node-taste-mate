@@ -96,6 +96,7 @@ const loginService = async (email, password) => {
       DT: {
         accessToken,
         user: {
+          userId: user.userId,
           email: user.email,
           name: user.name,
         },
