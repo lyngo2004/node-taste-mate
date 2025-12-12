@@ -2,7 +2,7 @@
   {
     "id": "q1",
     "question": "Which regional cuisine do you prefer?",
-    "attributeType": "taste_tag",
+    "attributeType": "cuisines",
     "type": "multi",
     "options": [
       "North American",
@@ -22,11 +22,10 @@
       "European"
     ]
   },
-
   {
     "id": "q2",
     "question": "What kind of flavors do you prefer?",
-    "attributeType": "taste_tag",
+    "attributeType": "taste_tags",
     "type": "multi",
     "options": [
       "savory",
@@ -42,11 +41,10 @@
       "tex-mex"
     ]
   },
-
   {
     "id": "q3",
     "question": "How health-conscious are your food choices?",
-    "attributeType": "health_tag",
+    "attributeType": "health_goals",
     "type": "multi",
     "options": [
       "dairy-free",
@@ -66,11 +64,10 @@
       "vegetarian"
     ]
   },
-
   {
     "id": "q4",
     "question": "Do you have any ingredient allergies?",
-    "attributeType": "allergies",
+    "attributeType": "avoid_ingredients",
     "type": "multi",
     "options": [
       "wheat",
@@ -83,13 +80,13 @@
     "allowCustomInput": true,
     "customInputPlaceholder": "Enter an ingredient you're allergic to"
   },
-
   {
     "id": "q5",
-    "question": "Give me 5 dishes that suit you best.",
-    "attributeType": "top_dishes",
-    "type": "multi-text",
+    "question": "Select 5 dishes that suit you best.",
+    "attributeType": "seed_items",
+    "type": "multi",
     "maxItems": 5,
-    "inputPlaceholder": "Enter a dish you like"
+    "options": [],
+    "dynamicOptions": true
   }
 ]

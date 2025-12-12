@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
+const mlRoutes = require(path.join(__dirname, 'src', 'routes', 'ml.route.js'))
 const apiRoutes = require(path.join(__dirname, 'src', 'routes', 'api.route.js'));
 const cors = require('cors');
 
@@ -13,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api', apiRoutes);
 app.get('/', (req, res) => res.send("Backend running"));
+app.use("/api/ml", mlRoutes);
 
 // Test DB connection
 sequelize.authenticate()
