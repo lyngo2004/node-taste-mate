@@ -61,7 +61,8 @@
       "low-saturated-fat",
       "low-sodium",
       "vegan",
-      "vegetarian"
+      "vegetarian",
+      "❌ None of them"
     ]
   },
   {
@@ -70,12 +71,22 @@
     "attributeType": "avoid_ingredients",
     "type": "multi",
     "options": [
+      "peanut",
+      "milk",
+      "egg",
       "wheat",
-      "gluten",
-      "nuts",
-      "shellfish",
+      "soy",
+      "sesame",
       "fish",
-      "dairy"
+      "shrimp",
+      "crab",
+      "lobster",
+      "clam",
+      "nut",
+      "almond",
+      "walnut",
+      "mustard",
+      "❌ None of them"
     ],
     "allowCustomInput": true,
     "customInputPlaceholder": "Enter an ingredient you're allergic to"
