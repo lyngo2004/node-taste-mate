@@ -11,7 +11,8 @@ const sequelize = new Sequelize(
     port: process.env.SEQ_PORT,
     logging: false,
     dialectOptions: {
-      encrypt: false
+      encrypt: true,
+      trustServerCertificate: true
     }
   }
 );
