@@ -6,10 +6,16 @@ const auth = (req, res, next) => {
         '/',
         '/user/login',
         '/user/register',
+        '/image-proxy'
     ]
-    if (white_lists.find(item => '/api' + item === req.originalUrl)) {
-        next();
-    } else {
+    if (
+        white_lists.some(item =>
+            req.originalUrl.startsWith('/api' + item)
+        )
+    ) {
+        return next();
+    }
+    else {
         //req?.headers?.authorization?.split(' ')[1];
         if (req.headers && req.headers.authorization) {
             const token = req.headers.authorization.split(' ')[1];
