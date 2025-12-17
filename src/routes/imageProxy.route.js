@@ -1,10 +1,12 @@
-import express from "express";
-import fetch from "node-fetch";
+const express = require("express");
+const fetch = require("node-fetch");
 
 const router = express.Router();
 
-// GET /api/image-proxy?url=...
-router.get("/image-proxy", async (req, res) => {
+/**
+ * GET /api/image-proxy?url=...
+ */
+router.get("/", async (req, res) => {
   const { url } = req.query;
 
   if (!url) {
@@ -35,4 +37,4 @@ router.get("/image-proxy", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;
